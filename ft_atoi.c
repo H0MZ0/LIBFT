@@ -14,36 +14,31 @@ int atoi(const char *str)
 {
 	int	i;
 	int	sign;
-	char	dst;
+	int	result;
 
 	i = 0;
-	sign = -1;
-	while (str[i])
-	{
-		dst[i] = src[i];
-	}
-	dst[i] = '\0';
-	i = 0; 
-	while (dst[i] == ' ' || dst[i] == '	')
+	sign = 1;
+	result = 0;
+	while (str[i] == ' ' || str[i] == '	')
 	{
 		i++;
 	}
-	while (dst[i] == '+' || dst[i] == '-')
+	while (str[i] == '+' || str[i] == '-')
 	{
-		if (dst[i] == '-')
-			dst[i] *= sign;
+		if (str[i] == '-')
+			sign *= -1;
 		i++;
 	}
-	while (dst[i] >= '0' && dst[i] <= '9')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		dst[i] += 48;
+		result = result * 10 + (str[i] - 48);
 		i++;
 	}
-	return (dst);
+	return (sign * result);
 }
 
 #include <stdio.h>
 int main()
 {
-	printf("%d", atoi("0"));
+	printf("%d", atoi(" 	---+992k0s9"));
 }
