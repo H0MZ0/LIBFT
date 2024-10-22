@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/22 18:25:27 by hakader          ###   ########.fr       */
+/*   Created: 2024/10/22 18:30:28 by hakader           #+#    #+#             */
+/*   Updated: 2024/10/22 18:39:42 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *str)
+char	*strchr(const char *s, int c)
 {
 	int	i;
-	int	sign;
-	int	result;
 
 	i = 0;
-	sign = 1;
-	result = 0;
-	while (str[i] == ' ' || str[i] == '	')
+	while (s[i])
 	{
+		if (s[i] == c)
+			return (c);
 		i++;
 	}
-	while (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		result = result * 10 + (str[i] - 48);
-		i++;
-	}
-	return (sign * result);
+	return (NULL);
 }

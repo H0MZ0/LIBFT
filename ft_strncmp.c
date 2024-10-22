@@ -1,38 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/22 18:25:27 by hakader          ###   ########.fr       */
+/*   Created: 2024/10/22 19:52:08 by hakader           #+#    #+#             */
+/*   Updated: 2024/10/22 20:05:18 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *str)
+int	strncmp(const char *s1, const char *s2, size_t n)
 {
 	int	i;
-	int	sign;
-	int	result;
 
 	i = 0;
-	sign = 1;
-	result = 0;
-	while (str[i] == ' ' || str[i] == '	')
+	while (s2[i])
 	{
-		i++;
+		if (s1[i] == s2[i] && s1[i])
+		{
+			i++;
+		}
+		else
+			return (s1);
 	}
-	while (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		result = result * 10 + (str[i] - 48);
-		i++;
-	}
-	return (sign * result);
+	return (s2);
 }
