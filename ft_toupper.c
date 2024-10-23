@@ -6,20 +6,13 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:02:26 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/22 12:10:27 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/23 09:54:00 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	toupper(char x)
+char	toupper(int c)
 {
-	int	i;
-
-	i = 0;
-	while (x[i])
-	{
-		if (x >= 'a' && x <= 'z')
-			x -= 32;
-		i++;
-	}
-	return (x);
+	if (c >= 'a' && x <= 'z')
+		c -= 32;
+	return (c);
 }

@@ -6,13 +6,15 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:59:35 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/22 12:01:44 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/23 09:50:15 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	strlen(char c)
+#include <string.h>
+
+size_t strlen(const char *s)
 {
-	int	x;
+	size_t	x;
 
 	x = 0;
 	while (c[x])
