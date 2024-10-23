@@ -6,13 +6,13 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:59:35 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/23 09:50:15 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/23 12:38:53 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t strlen(const char *s)
+size_t	strlen(const char *s)
 {
 	size_t	x;
 
