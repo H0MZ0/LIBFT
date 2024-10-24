@@ -6,15 +6,17 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/22 18:25:27 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 09:46:22 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 int	atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	size_t	i;
+	size_t	sign;
+	size_t	result;
 
 	i = 0;
 	sign = 1;

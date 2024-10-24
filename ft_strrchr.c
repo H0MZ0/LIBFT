@@ -6,13 +6,15 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:46:03 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/22 19:50:36 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 09:51:17 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 char	*strrchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])

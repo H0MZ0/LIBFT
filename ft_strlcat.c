@@ -6,16 +6,16 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:36:35 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/23 20:55:38 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 09:49:03 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stdio.h>
 
 size_t	strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

@@ -6,13 +6,15 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:52:08 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/22 20:05:18 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 09:50:46 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 int	strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s2[i])
