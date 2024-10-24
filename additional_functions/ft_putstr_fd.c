@@ -1,40 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 09:53:39 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/24 14:14:06 by hakader          ###   ########.fr       */
+/*   Created: 2024/10/24 14:53:00 by hakader           #+#    #+#             */
+/*   Updated: 2024/10/24 14:53:54 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include <unistd.h>
 
-char	*strnstr(const char *big, const char *little, size_t len)
+void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
-	size_t	j;
-	size_t	len_big;
-	size_t	len_lit;
 
 	i = 0;
-	j = 0;
-	len_big = strlen(big);
-	len_lit = strlen(little);
-	if (len_lit == 0 || len_lit == NULL
-		|| len_lit > len_big)
-		return (NULL);
-	while (big[i])
+	while (s[i])
 	{
-		if (big[i] == little[j])
-			j++;
+		write (fd, &s[i], 1);
 		i++;
 	}
-	if (little[j] == '\0')
-		return (little);
-	else
-		return (NULL);
 }
