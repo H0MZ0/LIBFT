@@ -6,22 +6,24 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:29:04 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/23 12:37:50 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 20:36:00 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <stddef.h>
 
-void	*memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	char	*dest;
+	size_t			i;
+	char			*dest;
+	unsigned char	src;
 
 	i = 0;
 	dest = s;
-	while (n < 0 && s[i])
+	src = c;
+	while (i < n)
 	{
-		dest[i] = c;
+		dest[i] = src;
 		i++;
 	}
-	return (s);
 }

@@ -6,19 +6,19 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:23:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/24 14:33:00 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 20:36:32 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <stddef.h>
 
-void	*memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	const char	*srrc;
+	const char			*srrc;
 	unsigned const char	*dst;
-	size_t	len_src;
-	size_t	len_dest;
-	size_t	i;
+	size_t				len_src;
+	size_t				len_dest;
+	size_t				i;
 
 	srrc = src;
 	dts = dest;

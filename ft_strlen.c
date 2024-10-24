@@ -6,13 +6,13 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:59:35 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/24 09:50:15 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 18:52:18 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-size_t	strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	x;
 

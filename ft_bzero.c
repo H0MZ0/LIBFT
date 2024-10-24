@@ -6,20 +6,22 @@
 /*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:30:41 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/24 09:46:41 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/24 20:33:34 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
+#include <stddef.h>
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*dest;
 
 	i = 0;
-	while (s[i] && n > 0)
+	dest = s;
+	while (i < n)
 	{
-		s[i] = 48;
+		dest[i] = 0;
 		i++;
 	}
 }
