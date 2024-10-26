@@ -3,36 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:23:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/24 20:36:32 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/25 22:42:16 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	const char			*srrc;
-	unsigned const char	*dst;
-	size_t				len_src;
-	size_t				len_dest;
-	size_t				i;
+	size_t	i;
+	unsigned char	*s;
+	unsigned char	*d;	
 
-	srrc = src;
-	dts = dest;
-	len_src = strlen(src);
-	len_dest = strlen (dest);
+	s = (unsigned char *)src;
+	d = (unsigned char *)dest;
 	i = 0;
-	if (src == NULL && n > 0)
+	if (n == 0)
+		return (d);
+	if (!s && !d)
 		return (NULL);
-	if (len_src > len_dest)
-		return (0);
-	while (len_src < len_dest && src[i])
+	if (i < n)
 	{
-		dst[i] = srrc[i];
+		d[i] = s[i];
 		i++;
 	}
-	dest[i] = '\0';
+	return (d);
 }

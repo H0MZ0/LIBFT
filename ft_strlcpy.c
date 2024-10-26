@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:17:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/25 10:49:12 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/25 15:45:02 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 {
