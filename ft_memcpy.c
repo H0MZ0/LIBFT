@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:23:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/25 22:42:16 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/26 10:02:23 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*s;
 	unsigned char	*d;	
 

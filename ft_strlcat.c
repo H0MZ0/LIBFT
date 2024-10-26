@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:36:35 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/25 15:46:19 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/26 14:12:53 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	i = 0;
-	if (dstsize > dst_len + src_len + 1)
+	if (dstsize <= 0)
+		return (src_len);
+	if (dstsize > dst_len)
 	{
 		while (src[i])
 		{
@@ -29,6 +31,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 			i++;
 			dst_len++;
 		}
-		return (dst_len);
+		dst[dst_len] = '\0';
 	}
+	return (dst_len + src_len);
 }

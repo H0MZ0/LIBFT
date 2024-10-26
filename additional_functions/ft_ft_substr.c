@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_ft_substr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 20:17:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/26 12:19:14 by hakader          ###   ########.fr       */
+/*   Created: 2024/10/26 17:36:54 by hakader           #+#    #+#             */
+/*   Updated: 2024/10/26 18:01:22 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char    *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	size_t	src_len;
+    size_t  i;
+    size_t  s_len;
+    size_t  s1;
 
-	i = 0;
-	if (dstsize > 0)
-	{
-		while (src[i] && i < dstsize - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	return (ft_strlen(src));
+    i = 0;
+    s_len = ft_strlen(s);
+    if (s_len > len)
+    {
+        while (s[len])
+        {
+            s1[i] = s[len];
+            len++;
+            i++;
+        }
+    }
+    return (s);
 }

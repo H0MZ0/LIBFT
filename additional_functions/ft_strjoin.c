@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 20:17:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/26 12:19:14 by hakader          ###   ########.fr       */
+/*   Created: 2024/10/26 18:16:17 by hakader           #+#    #+#             */
+/*   Updated: 2024/10/26 18:31:06 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+
+
+char *ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-	size_t	src_len;
+    size_t  totalen;
+    size_t  aloc;
+    size_t  *dest;
+    size_t  s1_len;
+    size_t  s2_len;
 
-	i = 0;
-	if (dstsize > 0)
-	{
-		while (src[i] && i < dstsize - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	return (ft_strlen(src));
+    s1_len = ft_strlen(s1);
+    s1_len = ft_strlen(s2);
+    totalen = s1_len + s2_len;
+    aloc = malloc(char *(totalen));
+    if (totalen == NULL)
+        return (NULL);
+    if(dest[i])
+    {
+
+    }
+    dest = '\0';
+    return (dest);
 }
