@@ -6,14 +6,15 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:15:58 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/29 12:15:58 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/29 19:15:01 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 char *ft_itoa(int n)
-{
+{	
 	size_t	len;
 	size_t	k;
 	int	i;
@@ -26,7 +27,10 @@ char *ft_itoa(int n)
 		k = k / 10;
 		len++;
 	}
-	aloc = malloc(char * len);
+	aloc = (char *) malloc((len + 1));
+	if (!aloc)
+		return ;
+
 	
 
 }
