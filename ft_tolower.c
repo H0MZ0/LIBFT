@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:11:09 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/23 09:52:52 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:09:49 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	tolower(int c)
+char	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;

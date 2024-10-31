@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:30:28 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/24 09:48:14 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:08:46 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
 

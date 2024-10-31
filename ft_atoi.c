@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/24 09:46:22 by hakader          ###   ########.fr       */
+/*   Updated: 2024/10/31 16:07:04 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	size_t	i;
 	size_t	sign;
