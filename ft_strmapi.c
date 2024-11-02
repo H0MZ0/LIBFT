@@ -1,40 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/02 09:19:29 by hakader          ###   ########.fr       */
+/*   Created: 2024/11/02 09:20:33 by hakader           #+#    #+#             */
+/*   Updated: 2024/11/02 10:15:38 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>	// for testing
 
-int	ft_atoi(const char *str)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
-	size_t	sign;
-	size_t	result;
+	unsigned int	i;
+	char			*aloc;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
-	sign = 1;
-	result = 0;
-	while (str[i] == ' ' || str[i] == '	')
+	aloc = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!aloc)
+		return (NULL);
+	while (i < ft_strlen(s))
 	{
+		aloc[i] = f(i, s[i]);
 		i++;
 	}
-	while (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		result = result * 10 + (str[i] - 48);
-		i++;
-	}
-	return (sign * result);
+	aloc[ft_strlen(s)] = '\0';
+	return (aloc);
 }

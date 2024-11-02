@@ -10,7 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+#include <stdio.h>
+
+int	count_words(char *s)
+{
+
+}
+
 char	**ft_split(char const *s, char c)
 {
-		
+
 }
