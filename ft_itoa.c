@@ -5,18 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 18:11:25 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/31 19:18:56 by hakader          ###   ########.fr       */
+/*   Created: 2024/11/02 14:22:36 by hakader           #+#    #+#             */
+/*   Updated: 2024/11/02 14:36:32 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int	ft_len(int n)
 {
 	int	i;
 
 	i = 0;
+	if (n == 0)
+		return (1); // Account for zero as a single-digit number
 	while (n != 0)
 	{
 		n = n / 10;
@@ -25,15 +31,15 @@ int	ft_len(int n)
 	return (i);
 }
 
-char	ft_swap(char *s)
+char	*ft_swap(char *s)
 {
 	char	tmp;
 	int		i;
 	int		k;
 
 	i = 0;
-	k = ft_strlen(s);
-	while (i > k)
+	k = strlen(s) - 1;
+	while (i < k)
 	{
 		tmp = s[k];
 		s[k] = s[i];
@@ -54,22 +60,28 @@ char	*ft_itoa(int n)
 	k = n;
 	i = 0;
 	len_n = ft_len(n);
-	aloc = malloc((len_n + 1) * sizeof(char *));
+	aloc = malloc((len_n + 2)) * sizeof(char));
 	if (!aloc)
 		return (NULL);
 	if (k == 0)
-		aloc[0] = '0';
+		aloc[i++] = '0';
 	if (k < 0)
+	{
 		aloc[0] = '-';
-		k *= -1;
+		k = -k;
 		i = 1;
-	if (k > 0)
-		while (i <= len_n)
-		{
-			aloc[i] = k + 48;
-			i++;
-		}
-	aloc = ft_swap(aloc);
-	aloc[len_n + 1] = '\0';
+	}
+	while (k > 0)
+	{
+		aloc[i++] = (k % 10) + '0';
+		k = k / 10;
+	}
+	aloc[i] = '\0';
+	if (n < 0 || n > 0)
+		aloc = ft_swap(aloc + (n < 0)) - (n < 0);
 	return (aloc);
+}
+int main()
+{
+    printf("%s", ft_itoa(111));
 }

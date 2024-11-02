@@ -6,11 +6,11 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:37:47 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/31 16:37:49 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/02 14:23:58 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-int	memcmp(const void s1[.n], const void s2[.n], size_t n)
+int memcmp(const void s1[n], const void s2[n], size_t n)
 {
 }
