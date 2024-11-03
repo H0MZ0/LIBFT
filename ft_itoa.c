@@ -6,12 +6,10 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:22:36 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/02 14:36:32 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/03 10:27:45 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include "libft.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -22,7 +20,7 @@ int	ft_len(int n)
 
 	i = 0;
 	if (n == 0)
-		return (1); // Account for zero as a single-digit number
+		return (1);
 	while (n != 0)
 	{
 		n = n / 10;
@@ -80,8 +78,4 @@ char	*ft_itoa(int n)
 	if (n < 0 || n > 0)
 		aloc = ft_swap(aloc + (n < 0)) - (n < 0);
 	return (aloc);
-}
-int main()
-{
-    printf("%s", ft_itoa(111));
 }
