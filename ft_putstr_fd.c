@@ -6,12 +6,12 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:08:28 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/31 16:08:30 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/03 15:22:21 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <unistd.h>
+#include "libft.h"
+#include <stdio.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {

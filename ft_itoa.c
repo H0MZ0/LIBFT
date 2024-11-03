@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:22:36 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/03 10:27:45 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/03 13:26:45 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_len(int n)
 {
@@ -48,17 +46,11 @@ char	*ft_swap(char *s)
 	return (s);
 }
 
-char	*ft_itoa(int n)
+char	ft_it(int k,int i)
 {
 	char	*aloc;
-	int		len_n;
-	int		k;
-	int		i;
 
-	k = n;
-	i = 0;
-	len_n = ft_len(n);
-	aloc = malloc((len_n + 2)) * sizeof(char));
+	aloc = malloc((len_n + 2) * sizeof(char));
 	if (!aloc)
 		return (NULL);
 	if (k == 0)
@@ -74,7 +66,19 @@ char	*ft_itoa(int n)
 		aloc[i++] = (k % 10) + '0';
 		k = k / 10;
 	}
-	aloc[i] = '\0';
+	aloc = '\0';
+}
+
+char	*ft_itoa(int n)
+{
+	int	len_n;
+	int	k;
+	int	i;
+
+	k = n;
+	len_n = ft_len(n);
+	i = 0;
+	ft_it(k, i)
 	if (n < 0 || n > 0)
 		aloc = ft_swap(aloc + (n < 0)) - (n < 0);
 	return (aloc);

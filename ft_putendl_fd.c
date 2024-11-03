@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:08:16 by hakader           #+#    #+#             */
-/*   Updated: 2024/10/31 16:08:19 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/03 15:21:39 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <unistd.h>
+#include "libft.h"
+#include <stdio.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {

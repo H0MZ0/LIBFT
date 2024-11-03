@@ -6,11 +6,12 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:27:47 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/03 10:28:10 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/03 15:22:03 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {

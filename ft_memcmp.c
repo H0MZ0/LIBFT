@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:37:47 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/03 10:54:17 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/03 12:57:36 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*str1;
 	unsigned char	*str2;
 
