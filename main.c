@@ -6,49 +6,80 @@
 /*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:34:53 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/04 11:59:43 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/04 18:14:51 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 #include <stddef.h>
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	unsigned char	*s;
-	unsigned char	*d;
+	size_t	i;
+	size_t	j;
+	size_t	len_haystack;
+	size_t	len_needle;
 
-	s = (unsigned char *)src;
-	d = (unsigned char *)dst;
-	if (d == s)
-		return (0);
-	if (s < d)
+	i = 0;
+	j = 0;
+	len_haystack = ft_strlen(haystack);
+	len_needle = ft_strlen(needle);
+	if (needle == NULL || len_needle == 0 || len_needle > len_haystack)
+		return (NULL);
+	while (haystack[i])
 	{
-		while (len--)
-			d[len] = s[len];
-		return (d);
+		if (haystack[i] == needle[j])
+			j++;
+		i++;
 	}
-	else
-		return (ft_memcpy(d, s, len));
+	if (needle[j] == '\0')
+		return (needle);
+	return (NULL);
 }
 
-
-#include <stdio.h>
-#include <string.h>
-
 int main() {
-    char buffer[50] = "Hello, world!";
+    const char *haystack = "Hello, world!";
+    const char *needle1 = "world";
+    const char *needle2 = "o, w";
+    const char *needle3 = "foo"; // Not found
+    const char *needle4 = "";     // Empty string
 
-    // Overlapping memory regions
-    // Move the last 6 characters to the beginning of the buffer
-    ft_memmove(buffer, buffer + 7, 6);
-    memmove(buffer, buffer + 7, 6);
+    // Test with needle present in haystack
+    char *result1 = strnstr(haystack, needle1, 15);
+    char *result2 = strnstr(haystack, needle2, 15);
+    
+    // Test with needle not present
+    char *result3 = strnstr(haystack, needle3, 15);
+    
+    // Test with an empty needle
+    char *result4 = strnstr(haystack, needle4, 15);
 
-    buffer[6] = '\0'; // Null-terminate the string
+    // Output results
+    if (result1) {
+        printf("Found \"%s\" in haystack: \"%s\"\n", needle1, result1);
+    } else {
+        printf("\"%s\" not found in haystack\n", needle1);
+    }
 
-    // Print the modified buffer
-    printf("Modified buffer: %s\n", buffer); // Output: "world!"
+    if (result2) {
+        printf("Found \"%s\" in haystack: \"%s\"\n", needle2, result2);
+    } else {
+        printf("\"%s\" not found in haystack\n", needle2);
+    }
+
+    if (result3) {
+        printf("Found \"%s\" in haystack: \"%s\"\n", needle3, result3);
+    } else {
+        printf("\"%s\" not found in haystack\n", needle3);
+    }
+
+    if (result4) {
+        printf("Found empty needle in haystack: \"%s\"\n", result4);
+    } else {
+        printf("Empty needle not found in haystack\n");
+    }
 
     return 0;
 }
