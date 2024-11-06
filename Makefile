@@ -6,7 +6,7 @@
 #    By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 15:40:23 by hakader           #+#    #+#              #
-#    Updated: 2024/11/02 21:00:29 by hakader          ###   ########.fr        #
+#    Updated: 2024/11/06 16:33:31 by hakader          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ BSRC = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_b
 
 OBJ = $(SRC:.c=.o)
 BOBJ = $(BSRC:.c=.o)
+
+.PHONY : clean
 
 NAME = libft.a
 
