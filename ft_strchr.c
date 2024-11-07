@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:30:28 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/05 22:56:22 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/07 09:56:23 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 
 	i = 0;
+	if (c == '\0')
+		return (0);
 	while (s[i])
 	{
 		if (s[i] == c)
 			return ((char *)s + i);
 		i++;
 	}
-	return (NULL);
 }
