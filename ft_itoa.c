@@ -6,23 +6,23 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:22:36 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/05 22:55:46 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/08 21:29:41 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_char(char *s, unsigned int number, long int len)
+static char	*ft_char(char *s, unsigned int num, long int len)
 {
-	while (number > 0)
+	while (num > 0)
 	{
-		s[len--] = 48 + (number % 10);
-		number = number / 10;
+		s[len--] = 48 + (num % 10);
+		num = num / 10;
 	}
 	return (s);
 }
 
-static long int	ft_len(int n)
+static int	ft_len(int n)
 {
 	int	len;
 
@@ -39,12 +39,10 @@ static long int	ft_len(int n)
 
 char	*ft_itoa(int n)
 {
-	char				*s;
-	long int			len;
-	unsigned int		number;
-	int					sign;
+	char	*s;
+	int		len;
+	int		num;
 
-	sign = 1;
 	len = ft_len(n);
 	s = (char *)malloc(sizeof(char) * (len + 1));
 	if (!(s))
@@ -54,12 +52,11 @@ char	*ft_itoa(int n)
 		s[0] = '0';
 	if (n < 0)
 	{
-		sign *= -1;
-		number = n * -1;
+		num = n * -1;
 		s[0] = '-';
 	}
 	else
-		number = n;
-	s = ft_char(s, number, len);
+		num = n;
+	s = ft_char(s, num, len);
 	return (s);
 }

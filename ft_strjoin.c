@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 18:16:17 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/08 00:12:34 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/08 21:59:31 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ static char	*chik(char const *s1, char const *s2)
 		return (NULL);
 	if (!s1)
 		return ((char *)s2);
-	if (!s2)
-		return ((char *)s1);
-	return (NULL);
+	return ((char *)s1);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)

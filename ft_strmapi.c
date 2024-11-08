@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:20:33 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/05 22:56:48 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/08 22:17:12 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	i = 0;
-	aloc = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	aloc = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!aloc)
 		return (NULL);
-	while (i < ft_strlen(s))
+	while (s[i])
 	{
 		aloc[i] = f(i, s[i]);
 		i++;
 	}
-	aloc[ft_strlen(s)] = '\0';
+	aloc[i] = '\0';
 	return (aloc);
 }
