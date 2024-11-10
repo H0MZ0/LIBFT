@@ -6,7 +6,7 @@
 #    By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 15:40:23 by hakader           #+#    #+#              #
-#    Updated: 2024/11/06 20:48:06 by hakader          ###   ########.fr        #
+#    Updated: 2024/11/09 21:51:41 by hakader          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,9 @@ $(BOBJ) : $(BSRC)
 		$(CFLAGS) $(BSRC)
 		ar rcs $(NAME) $(BOBJ)
 
+bonus:
+		$(CFLAGS) $(BSRC)
+		ar rcs $(NAME) $(BOBJ)
 
 clean:
 	rm -f $(OBJ) $(BOBJ)
