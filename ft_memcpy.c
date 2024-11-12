@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:23:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/09 15:36:52 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/11 23:16:39 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	s = (unsigned char *)src;
 	d = (unsigned char *)dest;
+	if (!dest && !src)
+		return ((void *)0);
 	while (i < n)
 	{
 		d[i] = s[i];
@@ -28,3 +30,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (d);
 }
+
+// int main()
+// {
+//     char *s1[2];
+//     // char *s2 = "18";
+//     // size_t n = 2;
+//     char *n = (char *)memcpy(s1, "99", 0);
+//     printf("%s", n);
+// }

@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/08 21:23:25 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/11 21:50:29 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int		i;
+	int		sign;
+	long	result;
 
 	i = 0;
 	sign = 1;
