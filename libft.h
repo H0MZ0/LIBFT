@@ -6,16 +6,14 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:06:13 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/12 10:52:43 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/12 16:20:46 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
 # include <stdlib.h>
-# include <stdio.h>
 # include <unistd.h>
 
 typedef struct s_list
