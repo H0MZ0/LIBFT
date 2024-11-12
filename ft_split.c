@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:41:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/12 11:27:39 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/12 12:39:07 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = ft_count_word(s, c);
-	aloc = (char *)malloc((words + 1) * sizeof(char *));
+	aloc = malloc((words + 1) * sizeof(char *));
 	if (!aloc)
 		return (NULL);
 	aloc = ft_place_it (s, c, aloc, words);
