@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:08:50 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/12 16:52:26 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/12 19:01:33 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
-		return ((void *)0);
+		return ;
 	new->content = *lst;
 	*lst = new;
 }
