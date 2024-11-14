@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:22:36 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/12 23:55:23 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/14 09:48:56 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,3 +60,11 @@ char	*ft_itoa(int n)
 	s = ft_char(s, num, len);
 	return (s);
 }
+
+// #include <stdio.h>
+
+// int main()
+// {
+// 	char *s = ft_itoa(0);
+// 	printf("%s", s);
+// }
