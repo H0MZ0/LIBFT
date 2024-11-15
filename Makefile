@@ -1,14 +1,4 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/31 15:40:23 by hakader           #+#    #+#              #
-#    Updated: 2024/11/14 18:10:09 by hakader          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -29,10 +19,14 @@ all : $(NAME)
 
 $(NAME) : $(OBJ)
 		ar rcs $(NAME) $(OBJ)
+$(OBJ) : $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC)
 
 bonus : $(NAME) $(BOBJ)
 		ar rcs $(NAME) $(BOBJ)
-		
+$(BOBJ) : $(BSRC)
+	$(CC) $(CFLAGS) -c $(BSRC)
+
 clean :
 	rm -f $(OBJ) $(BOBJ)
 
