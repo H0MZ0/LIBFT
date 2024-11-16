@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:02:26 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/09 00:20:57 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 11:55:25 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,8 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%c", (char)ft_toupper('a'));
+// }

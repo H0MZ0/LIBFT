@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/12 23:49:59 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 11:18:41 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,8 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * result);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%d", ft_atoi(" 	-1123"));
+// }

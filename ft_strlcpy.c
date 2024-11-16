@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:17:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/05 22:56:41 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 14:22:18 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char s1[20] = "hello";
+// 	char *s2 = "wooio";
+// 	ft_strlcpy(s1, s2, 5);
+// 	printf("%s", s1);
+// 	return 0;
+// }

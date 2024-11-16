@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:46:03 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/08 22:44:05 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 12:39:05 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,16 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s1[i])
 		i++;
-	while (0 <= i)
+	while (i >= 0)
 	{
 		if (s1[i] == (char)c)
 			return (&s1[i]);
 		i--;
 	}
-	return (0);
+	return (NULL);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%s", ft_strrchr("jhjh", 'h'));
+// }

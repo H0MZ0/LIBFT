@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:23:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/11 23:16:39 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/15 19:10:30 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (d);
 }
+// #include <stdio.h>
 
 // int main()
 // {
-//     char *s1[2];
-//     // char *s2 = "18";
-//     // size_t n = 2;
-//     char *n = (char *)memcpy(s1, "99", 0);
-//     printf("%s", n);
+// 	char *src = "hello";
+// 	char dest[10];
+// 	ft_memcpy(dest, src, 1);
+// 	printf("%s", dest);
 // }

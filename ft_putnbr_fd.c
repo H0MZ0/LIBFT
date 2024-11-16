@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:27:47 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/05 22:56:11 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 11:24:27 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,13 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
+// #include <fcntl.h>
+// int main()
+// {
+// 	int fd = open("text.txt", O_CREAT | O_RDWR , 0777);
+// 	ft_putnbr_fd(1234, 1);
+// 	if (fd == -1)
+// 		return (1);
+// 	close(fd);
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:05:52 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/08 21:56:11 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 12:41:51 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,8 @@ char	*ft_strdup(const char *src)
 	dest[size] = '\0';
 	return (dest);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%s", ft_strdup("hello"));
+// }
