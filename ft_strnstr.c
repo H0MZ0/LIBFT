@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:53:39 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/05 22:56:55 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 18:21:35 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,8 @@ char	*ft_strnstr(const char *haystack, const char *to_find, size_t len)
 	}
 	return (0);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%s", ft_strnstr("hello wrod", "hello", 6));
+// }

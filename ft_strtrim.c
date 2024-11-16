@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:41:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/05 22:57:01 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 18:26:01 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(new, (char *)s1, size + 1);
 	return (new);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%s", ft_strtrim("helloll", NULL));
+// }
