@@ -6,11 +6,12 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:20:33 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/17 11:31:25 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/17 17:13:13 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
