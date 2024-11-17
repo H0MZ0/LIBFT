@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:58:09 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 20:54:29 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/17 20:51:47 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*array;
 
-	array = (void *)malloc(count * size);
+	if (count != 0 && size > __SIZE_MAX__ / count)
+		return (NULL);
+	array = malloc(count * size);
 	if (!array)
 		return (NULL);
-	ft_bzero(array, (count * size));
+	ft_bzero(array, count * size);
 	return (array);
 }
 // #include <stdio.h>

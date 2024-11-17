@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:41:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/17 17:14:13 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/17 20:23:01 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,3 +99,16 @@ char	**ft_split(char const *s, char c)
 	}
 	return (aloc);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char *str = "hello world";
+// 	char **split = ft_split(str, ' ');
+// 	int i = 0;
+// 	while (split[i])
+// 	{
+// 		printf("%s\n", split[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }

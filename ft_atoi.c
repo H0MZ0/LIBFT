@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 11:18:41 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/17 21:16:34 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_atoi(const char *str)
 {
 	int		i;
 	int		sign;
-	long	result;
+	int		result;
 
 	i = 0;
 	sign = 1;
@@ -39,7 +39,8 @@ int	ft_atoi(const char *str)
 	return (sign * result);
 }
 // #include <stdio.h>
+// #include <string.h>
 // int main()
 // {
-// 	printf("%d", ft_atoi(" 	-1123"));
+// 	printf("%d", ft_atoi("4944894324897167845448497989"));
 // }

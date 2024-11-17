@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:17:38 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 14:22:18 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/17 21:17:45 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
+	if (!dst && dstsize == 0)
+		return (ft_strlen(src));
 	if (dstsize > 0)
 	{
 		while (src[i] && i < dstsize - 1)
