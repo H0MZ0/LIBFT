@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:29:04 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/17 09:29:53 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 20:26:29 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,10 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 // #include <stdio.h>
+
 // int main()
 // {
-// 	int n;
+// 	int n = 22;
 // 	char *p = (char *)&n;
 // 	ft_memset(p, 197, 1);
 // 	ft_memset(p+1, 252, 1);

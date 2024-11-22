@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:20:33 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/17 17:13:13 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 18:30:58 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	aloc[i] = '\0';
 	return (aloc);
 }
-// static char test(unsigned int n, char p)
-// {
-// 	n = 32;
-// 	if (p >= 'a' && p <= 'z')
-// 	{
-// 		return (p - n);
-// 	}
-// 	return (p);
-// }
 // #include <stdio.h>
 // int main()
 // {
 // 	char *p = "hello";
-// 	printf("%s", ft_strmapi(p, test));
+// 	printf("%s", ft_strmapi(p, ft_strchr));
 // }

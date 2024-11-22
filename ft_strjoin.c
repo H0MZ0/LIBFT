@@ -6,13 +6,13 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 18:16:17 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/17 21:17:28 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/16 12:43:16 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*check_nul(char const *s1, char const *s2)
+static char	*chik(char const *s1, char const *s2)
 {
 	if (!s1 && !s2)
 		return (NULL);
@@ -28,7 +28,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*aloc;
 
 	if (!s1 || !s2)
-		return (check_nul(s1, s2));
+		return (chik(s1, s2));
 	aloc = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!aloc)
 		return (NULL);
