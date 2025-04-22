@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:37:07 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 11:18:41 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:21:54 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 
 int	ft_atoi(const char *str)
 {
-	int		i;
-	int		sign;
 	long	result;
 
+	int (i), (sign);
 	i = 0;
 	sign = 1;
 	result = 0;
+	if (!str)
+		return (0);
 	while (str[i] && ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13)))
-	{
 		i++;
-	}
 	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')

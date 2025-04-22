@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:53:39 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 18:21:35 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:40:36 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *haystack, const char *to_find, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (!haystack && !len)
+	if (!haystack || !len)
 		return (0);
 	if (to_find[0] == '\0' || to_find == haystack)
 		return ((char *)haystack);
@@ -37,8 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *to_find, size_t len)
 	}
 	return (0);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%s", ft_strnstr("hello wrod", "hello", 6));
-// }

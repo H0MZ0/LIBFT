@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 18:16:17 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 12:43:16 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:38:15 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	aloc[i + j] = '\0';
 	return (aloc);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%s", ft_strjoin("hello", "world!"));
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 20:36:35 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 12:56:02 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:38:41 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dlen + i] = '\0';
 	return (dlen + slen);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	char s1[20] = "hello";
-// 	char *s2 = "wo";
-// 	ft_strlcat(s1, s2, 20);
-// 	printf("%s", s1);
-// }

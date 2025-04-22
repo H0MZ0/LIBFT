@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:08:09 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 11:45:07 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:34:26 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
 }
-// #include <fcntl.h>
-// int main()
-// {
-//     int fd = open("text.txt", O_WRONLY | O_CREAT, 0777);
-//     if (fd == -1)
-//         return (1);
-//     ft_putchar_fd('h', fd);
-//     close(fd);
-//     return (0);
-// }

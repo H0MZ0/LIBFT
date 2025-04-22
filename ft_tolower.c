@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:11:09 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 11:56:31 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:41:40 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%c", (char)ft_tolower('22'));
-// }

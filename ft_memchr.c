@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 16:37:43 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 09:47:21 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:30:48 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	size_t	i;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	while (i < n)
 	{
 		if (((unsigned char *)s)[i] == (unsigned char)c)

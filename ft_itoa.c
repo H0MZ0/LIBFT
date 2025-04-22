@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:22:36 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/14 09:48:56 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:27:56 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ char	*ft_itoa(int n)
 
 	len = ft_len(n);
 	s = (char *)malloc(sizeof(char) * (len + 1));
-	if (!(s))
+	if (!s)
 		return (NULL);
 	s[len--] = '\0';
 	if (n == 0)
@@ -60,11 +60,3 @@ char	*ft_itoa(int n)
 	s = ft_char(s, num, len);
 	return (s);
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-// 	char *s = ft_itoa(0);
-// 	printf("%s", s);
-// }

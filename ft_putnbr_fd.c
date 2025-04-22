@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: hakader <hakader@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:27:47 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/16 11:24:27 by hakader          ###   ########.fr       */
+/*   Updated: 2025/04/22 10:35:07 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
-// #include <fcntl.h>
-// int main()
-// {
-// 	int fd = open("text.txt", O_CREAT | O_RDWR , 0777);
-// 	ft_putnbr_fd(1234, 1);
-// 	if (fd == -1)
-// 		return (1);
-// 	close(fd);
-// 	return (0);
-// }
