@@ -2,7 +2,7 @@
 
 Welcome to my **Libft** repo! This is where I tried to *recreate the C standard library from scratch*, because why not suffer a little? 😅
 
-This project is part of the **42 School curriculum**, and it’s all about building a custom, personal C library that I can use in future projects 💪
+This project is part of the **1337** (part of 42 School curriculum), and it’s all about building a custom, personal C library that I can use in future projects 💪
 
 ---
 
